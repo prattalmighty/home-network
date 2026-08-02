@@ -260,7 +260,3 @@ This repository is part of my ongoing hands-on IT and Cybersecurity portfolio. F
 - Security Onion
 - Python Projects
 - Digital Forensics
-
-Security Considerations
-
-This repository intentionally omits sensitive configuration details such as internal IP addressing, wireless SSIDs, MAC addresses, serial numbers, and firmware versions. The focus is on documenting the technical concepts, implementation, and lessons learned while following good operational security (OPSEC) practices.
