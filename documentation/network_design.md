@@ -45,7 +45,7 @@ The physical network was designed around a centralized network location with str
 
 Cable drops were planned based on current device requirements as well as anticipated future needs. The resulting design provides wired connectivity to areas containing computers, entertainment devices, and other network-dependent equipment.
 
-![Network Floor Plan](../diagrams/structured_cabling_plan.jpg)
+![Network Floor Plan](<../diagrams/Structured cabling plan.jpeg>)
 
 The existing low voltage cabinet was in the master bedroom. I decided the new location should be in the guest closet. This is where the ISP wanted to place the gateway so the rack being close to it made the most sense. The guest bed
 
@@ -57,17 +57,17 @@ A dedicated guest network was configured to prevent guest devices from being pla
 ## Device Connectivity
 
 Wired Devices
-Desktop computers
-Printers
-Gaming/entertainment devices
-Network infrastructure
-Other stationary/high-bandwidth devices
+ - Desktop computers
+ - Printers
+ - Gaming/entertainment devices
+ - Network infrastructure
+ - Other stationary/high-bandwidth devices
 
 Wireless Devices
-Mobile devices
-IoT devices
-Smart-home devices
-Guest devices
+ - Mobile devices
+ - IoT devices
+ - Smart-home devices
+ - Guest devices
 
 Stationary devices with predictable locations were prioritized for wired connectivity where practical, reducing dependence on wireless bandwidth and improving connection consistency.
 
