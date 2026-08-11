@@ -7,16 +7,16 @@ The network was designed with an emphasis on reliability, security, maintainabil
 
 ## Objectives
 
-Replace/upgrade existing residential network cabling.
-Establish dedicated wired network drops throughout the home.
-Use Cat6A cabling to provide additional bandwidth capability and future-proof the physical infrastructure.
-Centralize network connections through a patch panel and managed switch.
-Provide wired connectivity for high-bandwidth or stationary devices.
-Provide wireless connectivity for mobile and IoT devices.
-Establish separate wireless networks for different trust levels and use cases.
-Provide reliable connectivity throughout the home.
-Create a foundation that can support future home-lab and cybersecurity projects.
-Document and validate the physical network installation.
+- Replace/upgrade existing residential network cabling.
+- Establish dedicated wired network drops throughout the home.
+- Use Cat6A cabling to provide additional bandwidth capability and future-proof the physical infrastructure.
+- Centralize network connections through a patch panel and managed switch.
+- Provide wired connectivity for high-bandwidth or stationary devices.
+- Provide wireless connectivity for mobile and IoT devices.
+- Establish separate wireless networks for different trust levels and use cases.
+- Provide reliable connectivity throughout the home.
+- Create a foundation that can support future home-lab and cybersecurity projects.
+- Document and validate the physical network installation.
 
 ## Network Architecture
 
