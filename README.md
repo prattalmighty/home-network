@@ -1,262 +1,108 @@
-# Home Network Design & Implementation
+# Home Network Infrastructure
 
-## Project Overview
+## Overview
 
-I designed and implemented a structured home network to gain hands-on experience with enterprise networking concepts while replacing the home's original wiring with modern Cat6A infrastructure. The project involved network planning, structured cabling, hardware installation, device configuration, DNS filtering, and documentation.
+I designed and implemented a structured home network to replace and expand the home's original networking infrastructure.
 
-My objective was to build a reliable, scalable network while developing practical skills directly applicable to IT Support, Systems Administration, and Cybersecurity roles.
+The project included planning the network topology, installing new Cat6A cable runs throughout the home, re-terminating existing cabling, building a centralized patch-panel and switching infrastructure, configuring the network, and validating the completed cable runs.
 
----
+The project was designed with future expansion, reliability, security, and maintainability in mind.
 
-# Objectives
+## Objectives
 
-- Replace aging network infrastructure with structured Cat6A cabling
-- Centralize all network connections using a patch panel
-- Build a reliable, maintainable home network
-- Configure separate wireless networks for different use cases
-- Implement network-wide DNS filtering
-- Gain practical experience with networking hardware and infrastructure
-- Practice documenting an IT implementation from planning through deployment
+- Replace aging and limited network infrastructure
+- Establish a centralized network distribution point
+- Provide wired network connectivity to key rooms
+- Install Cat6A cabling to support future network upgrades
+- Improve network organization and maintainability
+- Separate trusted and guest wireless access
+- Build a foundation for future network expansion
 
----
+## Project Scope
 
-# Project Scope
+- Network planning and topology design
+- Structured Cat6A cabling
+- Patch panel installation
+- Keystone termination
+- Custom patch cable fabrication
+- Network switch configuration
+- Router configuration
+- Wireless network configuration
+- Guest network implementation
+- Static IP configuration
+- Cable testing and validation
+- Network documentation
 
-This project included:
+## Network Design
 
-- Planning structured cable routes throughout the home
-- Pulling Cat6A cable through the attic
-- Installing low-voltage wall boxes
-- Terminating keystone jacks
-- Installing and wiring a centralized patch panel
-- Building and organizing a network rack
-- Configuring router and switching hardware
-- Deploying Raspberry Pi running Pi-hole
-- Configuring static IP addressing
-- Creating multiple wireless networks
-- Implementing secure guest Wi-Fi access
-- Providing UPS battery backup for network equipment
-- Documenting the completed implementation
+### Network Topology
 
----
+[View Network Diagram](../diagrams/network-topology.png)
 
-# Planning & Design
+### Physical Layout
 
-This section documents the planning process before installation.
+[View Floor Plan](../diagrams/floor-plan.png)
 
-## Planning Documentation
+The floor plan was used during planning to identify device locations and determine the required network drops throughout the home.
 
-- Floor plan showing Ethernet drop locations
-- Cable routing plan
-- Device placement
-- Network rack layout
-- Structured cabling plan
+## Infrastructure
 
-*(Planning diagrams will be added here.)*
+The project included a centralized network rack as well as the repurposing of the home's original structured wiring panel.
 
----
+The original panel contained existing telephone and coaxial cabling. Because the panel was small, enclosed, and poorly suited for future expansion, it was not selected as the primary network location.
 
-# Network Topology
-
-This section documents the logical network architecture.
-
-Internet
-
-↓
-
-ISP Gateway (Bridge Mode)
-
-↓
-
-Netgear Router
-
-↓
-
-24-Port Gigabit Switch
-
-↓
-
-Patch Panel
-
-↓
-
-Wall Drops
-
-↓
-
-Connected Devices
-
-*(Detailed network diagram will be added here.)*
-
----
-
-# Infrastructure Implementation
+Existing cabling was re-terminated and connected to a switch, allowing the existing room runs to be brought back to the primary network infrastructure using a single uplink.
 
 ## Structured Cabling
 
-Completed installation of structured Cat6A cabling throughout the home, including:
+New Cat6A runs were pulled through the attic to provide wired connectivity to multiple rooms.
 
-- Pulling cable through attic spaces
-- Installing low-voltage mounting brackets
-- Terminating Cat6A keystone jacks
-- Punching all cable runs into a centralized patch panel
-- Testing and verifying cable connectivity
-- Building custom Ethernet patch cables where required
+Wall connections were terminated using keystone jacks, while the centralized connections were terminated directly into a patch panel.
 
-## Network Rack
+Custom patch cables were also fabricated as needed.
 
-Installed and organized a centralized network cabinet containing:
+## Network Configuration
 
-- Router
-- Managed network switch
-- Patch panel
-- Raspberry Pi
-- UPS battery backup
+The network includes:
 
-*(Photos will be added here.)*
+- Wired Ethernet
+- 2.4 GHz wireless
+- 5 GHz wireless
+- Guest wireless network
+- Static IP assignments
+- Secure guest network access
+- Network switching
+- Router-based network management
 
----
+A QR code was created to simplify guest access to the designated guest network without exposing the primary network.
 
-# Network Configuration
+## Validation
 
-Current configuration includes:
+Completed cable runs were tested to verify continuity and correct pair mapping before being placed into service.
 
-- ISP gateway operating in Bridge Mode
-- Static IP assignments for infrastructure devices
-- Separate 2.4 GHz and 5 GHz wireless networks
-- Dedicated Guest Wi-Fi network
-- QR-code guest Wi-Fi onboarding
-- Raspberry Pi running Pi-hole for DNS filtering
-- DHCP reservations for critical devices
+[View cable testing documentation](documentation/validation-testing.md)
 
----
+## Security Considerations
 
-# Security Considerations
+Security considerations during the project included:
 
-This project follows basic operational security (OPSEC) practices.
+- Separate guest network
+- Restricted guest access
+- Secure wireless configuration
+- Avoiding unnecessary exposure of internal network information
+- Planning for future network segmentation
 
-To avoid exposing sensitive information, this repository intentionally excludes:
+## Documentation
 
-- Public IP addresses
-- Internal IP addressing
-- Wireless SSIDs
-- Passwords
-- MAC addresses
-- Device serial numbers
-- Firmware versions
-- Sensitive configuration files
+Detailed implementation documentation is available in the [`documentation`](documentation/) directory.
 
-Security measures currently implemented include:
+## Future Improvements
 
-- WPA2/WPA3 wireless security
-- Guest network isolation
-- Static addressing for infrastructure devices
-- Network-wide DNS filtering using Pi-hole
+Planned future improvements include:
 
-Future improvements include VLAN segmentation and enhanced network monitoring.
+- Expanded network segmentation
+- Additional monitoring
+- Improved centralized management
+- Further network automation
+- Additional infrastructure as the network grows
 
----
-
-# Challenges & Troubleshooting
-
-During this project I encountered several real-world challenges including:
-
-- Planning efficient cable routes through the attic
-- Selecting optimal Ethernet drop locations
-- Troubleshooting failed cable terminations
-- Re-punching keystone jacks
-- Testing cable continuity
-- Configuring router bridge mode
-- Organizing and documenting cable management
-
-These experiences provided valuable troubleshooting practice similar to issues encountered in IT support environments.
-
----
-
-# Lessons Learned
-
-This project strengthened my understanding of:
-
-- Structured cabling standards
-- Physical network infrastructure
-- Ethernet termination
-- Router and switch deployment
-- TCP/IP networking
-- DHCP and static IP management
-- Wireless network design
-- Technical documentation
-- Systematic troubleshooting
-
-It also reinforced the importance of planning, documentation, and testing throughout an IT implementation.
-
----
-
-# Future Improvements
-
-Planned enhancements include:
-
-- Migration to a UniFi network ecosystem
-- VLAN implementation
-- Centralized network monitoring
-- Syslog server
-- VPN implementation
-- Network Attached Storage (NAS)
-- Active Directory lab integration
-- Additional automation and monitoring
-
----
-
-# Technologies & Skills Demonstrated
-
-## Networking
-
-- TCP/IP
-- DHCP
-- Static IP Addressing
-- DNS
-- Wireless Networking
-- Network Topology
-- Ethernet
-- Structured Cabling
-
-## Hardware
-
-- Router Configuration
-- Switch Deployment
-- Patch Panel Installation
-- Keystone Termination
-- UPS Installation
-- Raspberry Pi
-
-## IT Support
-
-- Network Troubleshooting
-- Hardware Installation
-- Cable Testing
-- Documentation
-- Root Cause Analysis
-- Preventative Maintenance
-
-## Security
-
-- Pi-hole DNS Filtering
-- Guest Network Isolation
-- Secure Wireless Configuration
-- Basic Operational Security (OPSEC)
-- Infrastructure Documentation
-
----
-
-# Repository Roadmap
-
-This repository is part of my ongoing hands-on IT and Cybersecurity portfolio. Future repositories will document additional projects, including:
-
-- Active Directory Administration
-- Windows Administration
-- Linux Administration
-- Networking Labs
-- Azure Security Labs
-- Splunk SIEM
-- Security Onion
-- Python Projects
-- Digital Forensics
