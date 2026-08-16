@@ -33,15 +33,11 @@ The project was designed with future expansion, reliability, security, and maint
 - Cable testing and validation
 - Network documentation
 
-## Network Design
-
 ### Network Topology
-
-[View Network Diagram](<../diagrams/Logical Network Diagram.jpg>)
+![Logical Network Diagram](diagrams/Logical%20Network%20Diagram.jpg)
 
 ### Physical Layout
-
-[View Floor Plan](<../diagrams/Structured cabling plan.jpeg>)
+![Structured Cabling Plan](diagrams/Structured%20cabling%20plan.jpeg)
 
 The floor plan was used during planning to identify device locations and determine the required network drops throughout the home.
 
