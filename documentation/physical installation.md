@@ -12,8 +12,8 @@ This approach allowed the existing infrastructure to remain useful while providi
 
 ### Existing Infrastructure
 
-![Original Low-Voltage Panel](../evidence/existing-network-panel-before.jpg)
+![Original Low-Voltage Panel](../evidence/lowvoltagebefore.jpg)
 
 ### Repurposed Infrastructure
 
-![Repurposed Network Panel](../evidence/existing-network-panel-repurposed.jpg)
+![Repurposed Network Panel](../evidence/lowvoltagerepurposed.jpg)
