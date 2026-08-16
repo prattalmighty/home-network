@@ -37,11 +37,11 @@ The project was designed with future expansion, reliability, security, and maint
 
 ### Network Topology
 
-[View Network Diagram](../diagrams/network-topology.png)
+[View Network Diagram](<../diagrams/Logical Network Diagram.jpg>)
 
 ### Physical Layout
 
-[View Floor Plan](../diagrams/floor-plan.png)
+[View Floor Plan](<../diagrams/Structured cabling plan.jpeg>)
 
 The floor plan was used during planning to identify device locations and determine the required network drops throughout the home.
 
